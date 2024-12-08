@@ -1,0 +1,27 @@
+---
+all:
+  children:
+#vm-docker1
+    clickhouse:
+      hosts:
+        clickhouse-01:
+          ansible_host: "192.168.122.122"
+          ansible_connection: ssh
+          ansible_user: root
+          ansible_ssh_private_key_file: ~/scripts/edu/fops-sysadm-diplom/ansible/id_rsa
+#vm-docker2
+    vector:
+      hosts:
+        vector-01:
+          ansible_host: "192.168.122.129"
+          ansible_connection: ssh
+          ansible_user: root
+          ansible_ssh_private_key_file: ~/scripts/edu/fops-sysadm-diplom/ansible/id_rsa
+#vm-docker3
+    lighthouse:
+      hosts:
+        lighthouse-01:
+          ansible_host: "192.168.122.184"
+          ansible_connection: ssh
+          ansible_user: root
+          ansible_ssh_private_key_file: ~/scripts/edu/fops-sysadm-diplom/ansible/id_rsa
