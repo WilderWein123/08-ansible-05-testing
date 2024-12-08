@@ -280,6 +280,8 @@ ERROR:   py39-ansible210: commands failed
 ERROR:   py39-ansible30: commands failed
 ```
 
+Все отработало, кроме уничтожения контейнера, тк его внутри нет
+
 > 5. Создайте облегчённый сценарий для `molecule` с драйвером `molecule_podman`. Проверьте его на исполнимость.
 
 nano tox-requirements.txt -> убираем строку molecule_docker
